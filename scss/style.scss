@@ -1,0 +1,61 @@
+@import "reset";
+@import "fonts";
+@import "vars";
+@import "global";
+.header {
+  background: url(../img/header-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+.header-nav {
+  padding: 57px 0;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0 40px;
+    margin: 0 auto 0 69px;
+  }
+  &__link {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  &__tel {
+    font-size: 17px;
+    line-height: 26px;
+  }
+}
+.header-body {
+  min-height: calc(100vh - 162px);
+  // background: paleturquoise;
+  padding-bottom: 322px;
+  // &__content{
+  //   background: purple;
+  // }
+  &__subtitle {
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  &__title {
+    font-size: 100px;
+    line-height: 151px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  &__btn {
+    display: inline-flex;
+    border: 1px solid #fff;
+    font-size: 17px;
+    line-height: 26px;
+    padding: 17px 23px;
+  }
+}
+@import "media";

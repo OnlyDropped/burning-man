@@ -1,0 +1,156 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: 'Anton';
+  font-weight: 400;
+  font-style: normal;
+  src: local("Anton"), url("../fonts/Anton.woff2") format("woff2"), url("../fonts/Anton.woff") format("woff");
+  font-display: swap;
+}
+
+* {
+  font-family: "Anton", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header {
+  background: url(../img/header-bg.jpg) center center no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.header-nav {
+  padding: 57px 0;
+}
+
+.header-nav__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0 40px;
+  margin: 0 auto 0 69px;
+}
+
+.header-nav__link {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.header-nav__tel {
+  font-size: 17px;
+  line-height: 26px;
+}
+
+.header-body {
+  min-height: calc(100vh - 162px);
+  padding-bottom: 322px;
+}
+
+.header-body__subtitle {
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header-body__title {
+  font-size: 100px;
+  line-height: 151px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.header-body__btn {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  border: 1px solid #fff;
+  font-size: 17px;
+  line-height: 26px;
+  padding: 17px 23px;
+}
+/*# sourceMappingURL=style.css.map */
