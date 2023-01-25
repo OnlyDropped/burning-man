@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import "reset";
 @import "fonts";
 @import "vars";
@@ -56,6 +57,59 @@
     font-size: 17px;
     line-height: 26px;
     padding: 17px 23px;
+  }
+}
+.about {
+  padding: 113px 0 57px;
+  &__inner {
+    display: grid;
+    grid-template-columns: minmax(100px, 270px) minmax(100px, 270px) minmax(100px, 570px);
+    grid-template-rows: minmax(100px, 260px) minmax(100px, 344px);
+    gap: 67px 30px;
+  }
+  &__item:nth-child(1) {
+    grid-column: 1 / 3;
+  }
+  &__img:nth-child(1){
+    display: none;
+  }
+  &__title {
+    font-size: 50px;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 58px;
+  }
+  &__subtitle {
+    font-size: 25px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 19px;
+  }
+  &__text {
+    @extend %open-sans-400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: justify;
+    color: #000;
+  }
+}
+.footer {
+  padding: 57px 0 80px;
+  &__inner {
+    display: flex;
+    align-items: center;
+  }
+  &__copyright,
+  &__author {
+    @extend %open-sans-400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+  }
+  &__author {
+    margin-left: 55px;
   }
 }
 @import "media";
